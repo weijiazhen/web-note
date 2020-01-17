@@ -1,0 +1,16 @@
+1.设置Git的user name和email：(如果是第一次的话)
+git config --global user.name "weijiazhen"
+# 这里的邮箱 gdutxiaoxu@163.com  替换成自己的邮箱
+git config --global user.email  "289154842@qq.com"
+
+2.检查是否已经有SSH Key。
+ URL :C:\Users\Administrator\.ssh
+
+3.生成密钥
+ssh-keygen -t rsa -C "289154842@qq.com"
+
+4.添加密钥到ssh-agent
+eval "$(ssh-agent -s)"
+
+5.登陆Github, 添加 ssh
+把id_rsa.pub文件里的内容复制到SSH设置
